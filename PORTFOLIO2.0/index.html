@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/styles.css">
+
+        <!--==================== FAVICON ====================-->
+        <link rel="icon" href="packages/images/h.png" type="image/png">
+
+        <title>Samy's Portfolio</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Samy Hemri</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i>About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i>Skills
+                            </a>
+                        </li>
+                          <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i>Certificates
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i>Projects                                
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="scrn.html" class="nav__link" target="blank">
+                                <i class="uil uil-scenery nav__icon"></i>Project screenshots                                
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Contact                               
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section home--background" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/samy-hemri-1a16b6315/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>                       
+                        <a href="https://github.com/fghegho" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <div class="home__img-wrapper">
+                            <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0" mask-type="alpha">
+                                    <circle cx="100" cy="100" r="100"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <rect width="200" height="200" fill="white"/>
+                                    <image class="home__blob-img" x="0" y="0" width="200" height="200" xlink:href="packages/images/pras-1.png"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Samy</h1>
+                        <h3 class="home__subtitle">Data Science and AI Engineering Student</h3>
+                        <p class="home__description">Passionate about solving problems with technology, I specialize in data-driven projects and web development.
+                             Currently seeking a 4-month internship starting January 2025.</p>
+                        <a href="#contact" class="button button--flex home__button">
+                            Contact Me<i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll Down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+            <!--==================== ABOUT ====================-->
+<section id="about"> <!-- Ajoutez l'ID ici -->
+    <h2 class="section__title" style="margin-bottom: 20px;">About Me</h2>
+    <div class="about__container container grid">
+        <img src="packages/images/pras-2.jpg" alt="" class="about__img">
+        <div class="about__data">
+            <p class="about__description">
+                I am a third-year Computer Science engineering student at CESI Lille.
+                Currently, I specialize in Data Science and Artificial Intelligence.
+                I am driven by my enthusiasm for technology and thrive on solving challenging problems.
+                I enjoy working on innovative projects, collaborating with teams, and continuously expanding my skills in programming and data analysis.
+            </p>
+            <div class="about__info">
+                <div>
+                    <span class="about__info-title">04</span>
+                    <span class="about__info-name">Langues <br> spoken</span>
+                </div>
+                <div>
+                    <span class="about__info-title">02</span>
+                    <span class="about__info-name">Completed <br> certificates</span>
+                </div>
+                <div>
+                    <span class="about__info-title">15</span>
+                    <span class="about__info-name">Projects <br> completed</span>
+                </div>
+            </div>
+
+            <div class="about__buttons">
+                <a download="CV_samy.pdf" href="packages/files/CV_samy.pdf" class="button button--flex">
+                    Download CV<i class="uil uil-download-alt button__icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+            
+                <div class="skills__container container grid">
+                    <!-- Skills 1: Networking and Scripting -->
+                    <div>
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="fas fa-network-wired skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Networking and Scripting</h1>
+                                    <span class="skills__subtitle">Proficient in network simulation and scripting</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Packet Tracer</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__packet-tracer" style="width: 80%;"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Bash Scripting</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__bash" style="width: 60%;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Skills 2: Web Development -->
+                    <div>
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Web Development</h1>
+                                    <span class="skills__subtitle">Experienced in web technologies</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML, CSS, JavaScript</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html" style="width: 90%;"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__node" style="width: 60%;"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PHP , Java</h3>
+                                        <span class="skills__number">40%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__laravel" style="width: 40%;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Skills 3: Arduino and Embedded Systems -->
+                    <div>
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="fas fa-microchip skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Arduino and Embedded Systems</h1>
+                                    <span class="skills__subtitle">Certified in Arduino microcontroller programming</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Arduino</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__arduino" style="width: 80%;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Additional Skills: SQL, PHP, Apache -->
+                    <div>
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-database skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Database and Server</h1>
+                                    <span class="skills__subtitle">Proficient in databases and server technologies</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SQL, MySQL</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sql" style="width: 80%;"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PHP</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__php" style="width: 70%;"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Apache</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__apache" style="width: 50%;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            
+
+              <!--==================== QUALIFICATION ====================-->
+        <section class="qualification__section">
+            <h2 class="section__title">Background</h2>
+            <span class="section__subtitle">Academic and Career Journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div class="qualification__content qualification__active" data-content id="education">
+                <!--==================== QUALIFICATION 1 ====================--> 
+<div class="qualification__data" style="position: relative;">
+    <div style="display: flex; align-items: center; position: relative;">
+        <img src="packages/images/cesi.png" alt="CESI Logo" style="width: 80px; height: 80px; position: absolute; left: -100px;">
+        <div>
+            <h3 class="qualification__title">Engineering Cycle – Data Science and AI</h3>
+            <span class="qualification__subtitle">CESI Lille, France</span>
+            <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2024 - Present
+            </div>
+        </div>
+    </div>
+    <div>
+        <span class="qualification__rounder"></span>
+        <span class="qualification__line"></span>
+    </div>
+</div>
+
+
+                
+               <!--==================== QUALIFICATION 2 ====================--> 
+<div class="qualification__data">
+    <div></div>
+    <div>
+        <span class="qualification__rounder"></span>
+        <span class="qualification__line"></span>
+    </div>
+
+    <div style="display: flex; align-items: center;"> <!-- Ajout de flexbox pour aligner le texte et l'image -->
+        <div style="flex-grow: 1;"> <!-- Permet au texte de prendre tout l'espace disponible -->
+            <h3 class="qualification__title">Preparatory Classes in Computer Science</h3>
+            <span class="qualification__subtitle">HEM Engineering School, Casablanca</span>
+            <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2022 - 2024
+            </div>
+        </div>
+        <img src="packages/images/hem .png" alt="HEM Engineering School Logo" style="width: 50px; height: 50px; margin-left: 15px;"> <!-- Image positionnée à droite du texte -->
+    </div>
+</div>
+
+
+
+                <!--==================== QUALIFICATION 3 ====================--> 
+<div class="qualification__data" style="position: relative;">
+    <div style="display: flex; align-items: center; position: relative;">
+        <img src="packages/images/lyautey.png" alt="Azzaitoune High School Logo" style="width: 80px; height: 80px; position: absolute; left: -100px;">
+        <div>
+            <h3 class="qualification__title">Baccalaureate in Mathematical Sciences</h3>
+            <span class="qualification__subtitle">Lycée Lyautey, Casablanca</span>
+            <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2020 - 2021
+            </div>
+        </div>
+    </div>
+    <div>
+        <span class="qualification__rounder"></span>
+        <span class="qualification__line"></span>
+    </div>
+</div>
+
+
+                
+            
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+                <!--==================== QUALIFICATION 1 ====================--> 
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">No Work Experience Yet</h3>
+                        <span class="qualification__subtitle">Awaiting professional opportunities</span>
+                        <div class="qualification__calendar">
+                           <i class="uil uil-calendar-alt"></i>
+                           Anticipating future roles
+                        </div>
+                    </div>
+                
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+
+          
+               </div> 
+             
+               </div>
+            </div>
+        </section>
+      
+        <!--==================== CERTIFICATES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Certificates</h2>
+            <span class="section__subtitle">Prominent Certifications</span>
+
+            <div class="services__container container grid">
+                <!--==================== Linguaskill Business English Certificate ====================-->  
+<div class="services__content">
+    <div>
+        <img src="packages/images/linguaskill.png" alt="Linguaskill Logo" style="width: 90px; height: auto; margin-top: 20px;"> <!-- Logo à la place de l'icône -->
+        <h3 class="services__title">Linguaskill Business <br> English Certificate</h3>
+    </div>
+    <span class="button button--flex button--small button--link services__button">
+        View more
+        <i class="uil uil-arrow-right button__icon"></i>
+    </span>
+
+    <div class="services__modal">
+        <div class="services__modal-content">
+            <h4 class="services__modal-title">Linguaskill Business <br> English Certificate (C1 or Above)</h4>
+            <i class="uil uil-times services__modal-close"></i>
+            <div class="services__modal-description">
+                <p>The Linguaskill Business English Certificate demonstrates advanced proficiency in business English, assessing skills in reading, writing, listening, and speaking. It is ideal for professional settings where English is required.</p>
+            </div>
+        </div>
+    </div>
+</div>  
+
+
+        
+                <!--==================== IT Essentials: PC Hardware and Software ====================-->  
+<div class="services__content">
+    <div>
+        <img src="packages/images/cisco.png" alt="Cisco Logo" style="width: 90px; height: auto; margin-top: 20px;"> <!-- Ajout du logo -->
+        <h3 class="services__title">IT Essentials: PC Hardware and Software </h3>
+    </div>
+    <span class="button button--flex button--small button--link services__button">
+        View more
+        <i class="uil uil-arrow-right button__icon"></i>
+    </span>
+
+    <div class="services__modal">
+        <div class="services__modal-content">
+            <h4 class="services__modal-title">IT Essentials : <br> PC Hardware and Software</h4>
+            <i class="uil uil-times services__modal-close"></i>
+            <div class="services__modal-description">
+                <p> a Cisco Networking Academy certification that provides foundational knowledge in computer hardware, operating systems, and networking. It covers essential skills like installing and configuring Windows and Linux, troubleshooting hardware/software issues, and understanding basic cybersecurity practices. This certification prepares individuals for entry-level IT roles and further studies in networking and technology.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+
+        
+
+
+        
+
+
+        </section>
+        </section>
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Projects</h2>
+
+            <!-- Introduction Note -->
+            <p class="portfolio__intro">
+                These are just the main projects I've worked on. For more projects, visit my 
+                <a href="https://github.com/fghegho?tab=repositories" target="_blank" class="portfolio__link">GitHub</a>.
+            </p>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./packages/images/parc.png" alt="Modern Dashboard" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">parc informatique</h3>
+                            <p class="portfolio__description">Conception et simulation d'un réseau pour trois bâtiments (A, B, DG) sur Packet Tracer. Le projet inclut la gestion des adresses IPv6, l'optimisation de la bande passante, l'interconnexion des bâtiments, et la mise en œuvre de politiques de sécurité avancées pour une infrastructure efficace et sécurisée.</p>
+                            <a href="https://github.com/fghegho/parc-informatique" target="_blank" class="button button--flex button--small portfolio__button">
+                                View more on Github
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./packages/images/sokoban.jpg" alt="Seeds in Motion" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">sokoban game</h3>
+                            <p class="portfolio__description">Sokoban is a classic puzzle game where the player moves boxes in a maze to place them on target spots. The challenge lies in pushing, not pulling, the boxes, requiring careful planning to avoid getting stuck.</p>
+                            <a href="https://github.com/fghegho/Sokoban" target="_blank" class="button button--flex button--small portfolio__button">
+                                View more on Github
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>                    
+
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./packages/images/attendance (2).png" alt="Centralized Attendance Management System" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">attendance management</h3>
+                            <p class="portfolio__description">It is a web tool designed to track and manage the attendance of employees or students. It automates tasks like recording presence, absences, and leaves, ensuring accurate reporting.</p>
+                            <a href="https://github.com/fghegho/attendance-management" target="_blank" class="button button--flex button--small portfolio__button">
+                                View more on Github
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Add Navigation Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+
+
+       <!--==================== CONTACT ME ====================-->
+<section class="contact section" id="contact">
+    <h2 class="section__title">Contact Me</h2>
+    <span class="section__subtitle">Get in touch</span>
+
+    <div class="contact__container container grid">
+        <!-- Formulaire de contact -->
+        <form action="https://formspree.io/f/mnnqgwjq" method="POST" class="contact__form grid">
+            <div class="contact__inputs grid">
+                <div class="contact__content">
+                    <label for="name" class="contact__label">Name</label>
+                    <input type="text" name="name" class="contact__input" required>
+                </div>
+
+                <div class="contact__content">
+                    <label for="email" class="contact__label">E-mail</label>
+                    <input type="email" name="email" class="contact__input" required>
+                </div>
+            </div>
+
+            <div class="contact__content">
+                <label for="subject" class="contact__label">Subject</label>
+                <input type="text" name="subject" class="contact__input" required>
+            </div>
+
+            <div class="contact__content">
+                <label for="description" class="contact__label">Description</label>
+                <textarea name="description" id="description" cols="0" rows="7" class="contact__input" required></textarea>
+            </div>
+
+            <div>
+                <button type="submit" class="button button--flex">
+                    Send Message
+                    <i class="uil uil-message button__icon"></i>
+                </button>
+            </div>
+        </form>
+
+        <!-- Google Maps -->
+        <div class="contact__map">
+            <h3 class="contact__title">Find Us Here</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2630.212633208338!2d3.0678587845115747!3d50.624378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b3256e11%3A0x40af13e81646360!2sLille!5e0!3m2!1sen!2sfr!4v1697781328048!5m2!1sen!2sfr"
+                width="180%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <style>
+        .contact__container {
+            display: grid;
+            grid-template-columns: 2fr 3fr; /* Ajustement de la largeur des colonnes */
+            gap: 20px; /* Espace entre les colonnes */
+        }
+
+        .contact__form {
+            margin-right: auto; /* Aligne le formulaire à gauche */
+            margin-bottom: 20px; /* Espace en bas du formulaire */
+        }
+
+        .contact__map {
+            width: 100%; /* S'assure que la carte prend tout l'espace disponible */
+            height: auto; /* Ajuste automatiquement la hauteur */
+        }
+
+        @media (max-width: 768px) {
+            .contact__container {
+                grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+            }
+        }
+    </style>
+</section>
+
+
+
+
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Samy Hemri</h1>
+                    <span class="footer__subtitle">Computer Science Engineering Student</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Certificates</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                
+                
+            </div>
+            <p class="footer__copy">&#169; Samy Hemri. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="./packages/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./packages/js/main.js"></script>
+
+
+    <!--==================== Nebula Bot ====================-->
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "44PzIPIdXGb1pC4662O2a",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="44PzIPIdXGb1pC4662O2a"
+        domain="www.chatbase.co"
+        defer>
+    </script>
+</body>
+
+</html>

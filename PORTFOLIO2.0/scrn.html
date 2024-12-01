@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+
+    
+    /* CSS */
+    body {
+      margin: 0;
+      font-family: "poppins", sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem 0;
+      font-family: "poppins", sans-serif;
+
+      background-color: #1e1e1e;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-family: "poppins", sans-serif;
+
+      color: #f0f0f0;
+    }
+
+    .gallery-section {
+      margin: 20px 0;
+    }
+
+    .gallery-section h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #f0f0f0;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Lightbox Styles */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 1000;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+
+    .lightbox.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .lightbox .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 2rem;
+      color: #ffffff;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1e1e1e;
+      color: #aaaaaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML -->
+  <header>
+    <h1>My projects</h1>
+  </header>
+  <main>
+    <div class="gallery-section">
+      <h2>Attendance Management</h2>
+      <div class="gallery">
+        <img src="packages/screenshot/ABS1.png" alt="Screenshot 1">
+        <img src="packages/screenshot/ABS2.png" alt="Screenshot 2">
+        <img src="packages/screenshot/ABS3.png" alt="Screenshot 3">
+        <img src="packages/screenshot/ABS4.png" alt="Screenshot 4">
+      </div>
+    </div>
+
+    <div class="gallery-section">
+      <h2>Parc Informatique</h2>
+      <div class="gallery">
+        <img src="packages/screenshot/PARC1.png" alt="Screenshot 5">
+        <img src="packages/screenshot/PARC2.png" alt="Screenshot 6">
+        <img src="packages/screenshot/PARC3.png" alt="Screenshot 7">
+      </div>
+    </div>
+
+    <div class="gallery-section">
+      <h2>Sokoban</h2>
+      <div class="gallery">
+        <img src="packages/screenshot/SOKOB1.png" alt="Screenshot 8">
+        <img src="packages/screenshot/SOKOB2.png" alt="Screenshot 9">
+      </div>
+    </div>
+  </main>
+
+
+  <div class="lightbox" id="lightbox">
+    <button class="close" onclick="closeLightbox()">&times;</button>
+    <img src="" alt="Expanded view">
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Professional Gallery</p>
+  </footer>
+  <script>
+    // JavaScript for lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = lightbox.querySelector('img');
+
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImage.src = img.src;
+        lightbox.classList.add('visible');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('visible');
+    }
+
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
